@@ -33,6 +33,10 @@ sudo docker ps |grep php-fpm
 
 sudo docker exec -it container_php-fpm_id   /bin/bash
 
+curl -O https://getcomposer.org/download/1.8.4/composer.phar
+
+chomod +x composer.phar  
+
 cd /var/www/magento
 
 ../html/composer.phar   install  #you had put composer.phar and auth.json in /var/www/html directory before 
