@@ -9,7 +9,50 @@
 
 # Develop
 
+# [如何用docker-compose启动环境](contents/use-docker-compose.md)
+
 # How to install
+
+* 第一步 先下载,并将代码copy进相应的数据卷
+
+```
+git clone  https://github.com/lushtech/magento2-2.2.7
+
+cp  
+
+#切换到develop分支
+
+git checkout  develop
+
+```
+* 第二步 用compose.phar安装依赖
+
+```
+# 进入容器php-fpm
+# 安装composer.phar
+
+curl -O https://getcomposer.org/download/1.8.4/composer.phar
+
+chmod +x composer.phar
+
+# 编辑授权文件 composer到github上下载东西需要授权
+
+如果是去私有库下载其它插件，需要授权文件。这里并不需要。
+
+# 运行
+
+
+./composer.phar install
+
+```
+* 打开浏览器进行安装
+
+
+
+
+
+
+
 
 * First step
 creat a directory
