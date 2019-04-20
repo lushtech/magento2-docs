@@ -79,3 +79,5 @@ revise the composer.json file
 
 
 thought browser to install your magento
+
+# [如何用docker-compose启动环境](contents/use-docker-compose.md)
