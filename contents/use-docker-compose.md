@@ -84,7 +84,7 @@ services:
          ports:
            - 80:80
          volumes:
-           - magento2-data:/var/www
+           - magento2-data:/var/www/magento
          depends_on:
              php-fpm-service:
                condition: service_healthy
