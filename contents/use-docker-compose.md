@@ -29,7 +29,7 @@ docker volume create magento2-data
 如果docker-compose版本不够高，用以下命令安装
 ```
 #下载
-$ sudo curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+$ sudo curl -L https://github.com/docker/compose/releases/download/1.23.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
 #授权
 sudo chmod +x /usr/local/bin/docker-compose
