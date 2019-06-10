@@ -42,7 +42,8 @@ $ sudo curl -L https://github.com/docker/compose/releases/download/1.23.1/docker
 #授权
 sudo chmod +x /usr/local/bin/docker-compose
 
-#查看版本信息,如果找不到该命令，可能是权限不够，要用sudo运行
+#查看版本信息,如果找不到该命令，可能是/usr/local/bin/docker-compose不在环境
+#变量中，可以将docker-compose文件copy到/usr/bin目录
 
 sudo docker-compose --version
 
